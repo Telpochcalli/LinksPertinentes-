@@ -3,14 +3,15 @@ import './App.css';
 import LinkTree from './Components/LinkTree';
 import ReactDOM from 'react-dom'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import * as React from 'react';
 
 import {LINKS} from './DB/links';
 
 function App() {
   return (
-    <div className="App">
+    <React.Fragment className="App">
       <LinkTree links = {LINKS}/>
-    </div>
+    </React.Fragment>
   );
 }
 

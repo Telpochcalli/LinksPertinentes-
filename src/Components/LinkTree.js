@@ -11,30 +11,34 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const useStyles = makeStyles({
     telpo: {
-        width: "30%",
+        width: "50%",
         height: "auto",
+        display: "block",
+        marginLeft: "auto",
+        marginRight: "auto",
     },
     header:{
         backgroundColor:"#404040",
         color:"white",
     },
     content:{
-        margin:"50px 50px 50px 50px",
+        margin:"2px 2px 2px 2px",
         textAlign: "center"
     
     },
     link:{
-        fontSize:100,
+        fontSize:"10rem",
 
     },
     contactSquare:{
         backgroundColor:"#001F3F",
-        paddingBottom:"10px",
-        paddingTop:"10px",
-        marginLeft:"9rem",
-        marginRight:"9rem",
+        paddingBottom:"15px",
+        paddingTop:"15px",
+        marginLeft:"3rem",
+        marginRight:"3rem",
         borderRadius:"20px",
-        marginBlock:"10px"
+        marginBlock:"10px",
+        textAlign:"center"
 
     },
     spacing:{
@@ -50,11 +54,11 @@ function LinkTree(props){
 
     return(
         <React.Fragment>
-            <Box sx={{ flexGrow: 1 }}>
-                <Grid container spacing={2} className = {classes.header}>
-                    <Grid item xs={12}>
-                        <div classes = {classes.content}>
-                        <img className={classes.telpo} src = './img/Telpochcalli.png' alt="telpotcalli" />
+            <Box sx={{ flexGrow: 3 }} className = {classes.header}>
+                <Grid container spacing={3}>
+                    <Grid item xs={12}  className= {classes.content}>
+                        
+                        <img src = './img/t.png' alt="telpo" className = {classes.telpo}/>
                         <Typography variant = "h1">
                             Links Utiles:
                         </Typography>
@@ -62,7 +66,7 @@ function LinkTree(props){
                         <Typography variant = "h4">
                             Necesitas tu cuenta del tec asi como estar dentro el équipo para acceder a algunos de ellos. 
                         </Typography>
-                        </div>
+                        
                     </Grid> 
 
                     <Grid item xs={12}>
@@ -70,7 +74,7 @@ function LinkTree(props){
                             props.links.map(
                                 (link) => (
                                     <div className = {classes.contactSquare}>        
-                                        <Link variant="h3" color = "white" href={link.link} target="_blank" underline="none" classes = {classes.link}>
+                                        <Link variant="h5" color = "white" href={link.link} target="_blank" underline="none" classes = {classes.link}>
                                             {link.title}   <FontAwesomeIcon icon = {link.icon}/>
                                         </Link>
                                     </div>
