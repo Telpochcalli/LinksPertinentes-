@@ -57,7 +57,7 @@ export const LINKS =
         },
         {        
         id: 7,
-        title:'Organización de Github (Intern Program, wiki, y cosas varias)',
+        title:'Github (Intern Program & wiki)',
         link: 'https://github.com/Telpochcalli/',
         icon: faGithub
         },
@@ -69,7 +69,7 @@ export const LINKS =
         },
         {        
         id: 9,
-        title:'STM32CubeProgrammer',
+        title:'STM32 Cube Programmer',
         link: 'https://www.st.com/en/development-tools/stm32cubeprog.html',
         icon: faMicrochip
         },
