@@ -46,7 +46,7 @@ export const LINKS =
         {        
         id: 5,
         title:'Taproot Discord',
-        link: 'https://discord.gg/dhjDWpPj',
+        link: 'https://discord.com/invite/jjDrGhrjMy',
         icon: faDiscord
         },
         {        
@@ -69,8 +69,8 @@ export const LINKS =
         },
         {        
         id: 9,
-        title:'STM32 Cube Programmer',
-        link: 'https://www.st.com/en/development-tools/stm32cubeprog.html',
+        title:'STM32 Utility',
+        link: 'https://www.st.com/en/development-tools/stsw-link004.html',
         icon: faMicrochip
         },
     ];
